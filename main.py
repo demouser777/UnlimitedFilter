@@ -7,13 +7,9 @@ class FilterBot(Client):
 
     def __init__(self):
         super().__init__(
-         name="FilterBot",
-         api_id=API_ID, 
-         api_hash=API_HASH,
-         bot_token=BOT_TOKEN, plugins={"root": "FilterBot"}, workers=50, sleep_threshold=5,
+         name="FilterBot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins={"root": "FilterBot"}, workers=50, sleep_threshold=5,
         )
         self.LOGGER = LOGGER
-
     async def start(self):
         await super().start()
         me = await self.get_me()
