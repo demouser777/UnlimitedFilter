@@ -13,7 +13,7 @@ def LOGGER(name: str) -> Logger:
 if bool(environ.get("WEBHOOK", False)):
 
     try:
-        API_ID = environ.get("API_ID", 1234)
+        API_ID = environ.get("API_ID", "")
     except Exception as e:
         print(f"API_ID Invalid: \n\nLogs: {e}")
 
