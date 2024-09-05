@@ -66,9 +66,9 @@ if bool(environ.get("WEBHOOK", False)):
 
     ABOUT_TXT = environ.get("ABOUT_MESSAGE", AboutTxT)
 
-    AUTO_DELETE = bool(environ.get("AUTO_DELETE", True))
+    AUTO_DELETE = bool(environ.get("AUTO_DELETE", "True"))
 
-    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", 30))
+    AUTO_DELETE_SECOND = int(environ.get("AUTO_DELETE_SECOND", "30"))
 
     PORT = environ.get('PORT', '8080')
 
